@@ -1,0 +1,88 @@
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  background-color: #333333;
+  display: flex;
+  justify-content: center;
+}
+
+ul li a {
+  display: block;
+  color: white;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+ul li a:hover {
+  background-color: #111111;
+}
+
+ul li a:hover:not(.active) {
+  background-color: #111111;
+}
+
+
+ul li a.active {
+  background-color: deepskyblue;
+}
+
+
+
+.cards {
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    margin-top: 15px;
+}
+
+.card {
+    width: 250px;
+    border: 2px solid black;
+    text-align: center;
+    text-decoration: none;
+    color: black;
+    padding: 15px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease; 
+    cursor: pointer;
+    background-color: beige;
+}
+
+.card img {
+    width: 50%;
+    height: 120px;
+    object-fit: cover;
+}
+
+body {
+    background-color: aqua;
+    margin: 0px;
+}
+
+.card:hover {
+  transform: translateY(-8px); 
+  box-shadow: 0 12px 20px rgba(0, 0, 0, 1); 
+}
+
+.buttonHover {
+    font-size: 24px;
+    padding: 20px 50px;
+    border: 2px solid black;
+    border-radius: 10px;
+    background-color: white;
+    cursor: pointer;
+    transition: transform 0.3s ease, background-color 0.3s ease; 
+    margin-top: 15px;
+}
+
+.buttonHover:hover {
+    transform: translateY(-4px); 
+    background-color: burlywood;
+    box-shadow: 0 12px 20px rgba(0, 0, 0, 1); 
+}
+
+footer {
+    background-color: #111111;
+    padding: 10px;
+    margin-top: 30px;
+}
